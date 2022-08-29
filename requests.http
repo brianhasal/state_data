@@ -3,3 +3,6 @@ GET http://localhost:3000/states.json
 
 ### State Show Action
 GET http://localhost:3000/states/TC.json
+
+### Data Index Action
+GET http://localhost:3000/data.json

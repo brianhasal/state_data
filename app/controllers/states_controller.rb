@@ -27,8 +27,13 @@ class StatesController < ApplicationController
 
   end
 
-  def index
+  def index_abbr
     states = csv_parser("abbreviations.csv")
+    render json: states.as_json
+  end
+
+  def index_state_data
+    states = csv_parser("state_data.csv")
     render json: states.as_json
   end
 
