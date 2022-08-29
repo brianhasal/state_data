@@ -4,7 +4,9 @@ require 'csv'
 class StatesController < ApplicationController
 
   def index
-    states = CSV.parse("abbreviations.csv")
+    states = CSV.open("abbreviations.csv", "w") do |csv|
+      csv << [:Code]
+    end
     render json: states.as_json
   end
 
