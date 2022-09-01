@@ -11,13 +11,13 @@ class StatesController < ApplicationController
     out_array = []
 
     table.each do |row|
-      csv_array << row  
+      csv_array << row 
     end
 
     csv_array.each do |row|
       temp_array = []
       row.each do |key, value|
-        temp_array << {key => value}
+        temp_array << {key.downcase => value}
       end
       out_array << temp_array
     end
