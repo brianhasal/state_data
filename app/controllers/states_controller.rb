@@ -34,6 +34,7 @@ class StatesController < ApplicationController
 
   def index_state_data
     states = csv_parser("state_data.csv")
+    newstates = states
     render json: states.as_json
   end
 
