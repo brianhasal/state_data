@@ -18,6 +18,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_08_28_123756) do
     t.string "name"
     t.string "abbr"
     t.string "code"
+    t.string "state"
     t.integer "median_income"
     t.integer "unemployed_percent"
     t.integer "metro_percent"

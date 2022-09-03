@@ -4,6 +4,7 @@ class CreateStates < ActiveRecord::Migration[7.0]
       t.string :name
       t.string :abbr
       t.string :code
+      t.string :state
       t.integer :median_income
       t.integer :unemployed_percent
       t.integer :metro_percent
